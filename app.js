@@ -7,6 +7,7 @@ var app = require('koa')()
 
 var index = require('./routes/index');
 var code = require('./routes/code');
+var utest = require('./routes/utest');
 var users = require('./routes/users');
 
 // global middlewares
@@ -29,6 +30,7 @@ app.use(require('koa-static')(__dirname + '/public'));
 
 // routes definition
 koa.use('/', index.routes(), index.allowedMethods());
+koa.use('/utest.xml', utest.routes(), index.allowedMethods());
 koa.use('/code', code.routes(), code.allowedMethods());
 koa.use('/test', users.routes(), users.allowedMethods());
 
