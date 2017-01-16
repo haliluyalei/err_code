@@ -3,8 +3,15 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="/javascripts/bj-report.js"></script>
   </head>
   <body>
+	<script>
+		BJ_REPORT.init({
+			id: 2,
+			url: "http://test.badjs.oa.com:8081/badjs",
+		})
+	</script>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <img src="/code/e401" alt="401">
