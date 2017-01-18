@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var code = require('./routes/code');
 var utest = require('./routes/utest');
 var users = require('./routes/users');
+var sourcemap = require('./routes/sourcemap');
 
 // global middlewares
 app.use(views('views', {
@@ -33,6 +34,7 @@ koa.use('/', index.routes(), index.allowedMethods());
 koa.use('/utest.xml', utest.routes(), index.allowedMethods());
 koa.use('/code', code.routes(), code.allowedMethods());
 koa.use('/test', users.routes(), users.allowedMethods());
+koa.use('/sourcemap', sourcemap.routes(), users.allowedMethods());
 
 // mount root routes
 app.use(koa.routes());

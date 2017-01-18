@@ -1,0 +1,1 @@
+{"version":3,"file":"edit2.min.js","sources":["edit2.js"],"names":["setTimeout","num","Math","random","document","getElementById","innerText","errinfo","Error"],"mappings":"AAAAA,WAAW,WAEVC,IAAMC,KAAKC,QACX,IAAGF,IAAM,GACT,CACCG,SAASC,eAAe,SAASC,UAAY,sBAG9C,CACCF,SAASC,eAAe,SAASC,UAAY,ygBAE9C,GAAIC,SAAU,wBACb,MAAMC,OAAMD,UACX"}

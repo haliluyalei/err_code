@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="/javascripts/bj-report.js"></script>
+	<script src="/javascripts/bj-wrap.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+	<script>
+		BJ_REPORT.init({
+			id: 2,
+			url: "http://test.badjs.oa.com:8081/badjs",
+		}).tryJs().spyAll();
+	</script>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+   
+	<!-- <iframe src="http://www.cnxiantao.com/shuju.php">iframe - users</iframe>
+	<iframe src="https://www.baidu.com/">iframe - users</iframe>	 -->
+   
+	<script src="/code/index"></script>
+    <script src="/javascripts/error.min.js"></script>
+	<div id="write"></div>
+	<script src="/javascripts/edit2.min.js"></script>
+    <script src="/code/edit"></script>		
+	
+  </body>
+</html>
